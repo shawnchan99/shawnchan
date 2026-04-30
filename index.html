@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<lang="en">
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Personal Portfolio Website</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/03ba768207.js" crossorigin="anonymous"></script>
+
+<!---------------------------------->
+<!--                              -->
+<!-- -------------header--------- -->
+<!--                              -->
+<!---------------------------------->
+<div id="header" onload="getMobileOperatingSystem">
+  <div class="container">
+     <nav>
+        <img src="images/logo.png" class="logo">
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+     </nav>
+
+     <div class="marquee-container">
+        <div id="clocknow" class="marquee-clock"></div>
+     </div>
+
+     <div class="header-text">
+        <h1>IT Consultant</h1>
+        <p id="datenow">
+        <p id="deviceos">
+        <h1> Good <a id="greet"></a>, I'm <span>Shawn</span><br>Chan from Newcastle.</h1>
+     </div>
+  </div>
+</div>
+<!---------------------------------->
+<!--                              -->
+<!-- -------------about---------- -->
+<!--                              -->
+<!---------------------------------->
+<div id="about">
+  <div class="container">
+    <div class="row">
+
+        <div class="about-col-1">
+           <a href="https://shawnchan99.github.io/milko1/">
+              <img src="images/user.png">
+           </a>
+        </div>
+
+        <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>I am an IT Manager with hands-on experience in various IT implementations including networking,
+                cybersecuirty and IT policy. I literally do program coding, cable crimping, system architecture design,
+                cloud computing operation, vendor management, tender drafting, IT governance, end-user support and training.
+                I am a good team-player with solid experience in Scrum and Agile methodologies for project collaboration. Let's
+                take a deep dive into the resilience, sustainable, innovative world of IT management and business support.
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills
+              <p class="tab-links" onclick="opentab('experience')">Experience
+              <p class="tab-links" onclick="opentab('education')">Education
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>UI/UX</span><br>Designing web application interfaces</li>
+                    <li><span>Network Cabling</span><br>Designing network infrastructure and cabling for CAT5e, CAT6, UTP, STP, etc.</li>
+                    <li><span>System Deployment</span><br>PoC, SIT, UAT organization and orchestration</li>
+                    <li><span>DBA</span><br>Oracle database administration and analysis</li>
+                </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>IT Governance</span><br>Managing IT resouces and workforce, ISO, SOX and GDPR compliance</li>
+                    <li><span>Systems Administration</span><br>Administrating various computer systems and processes</li>
+                    <li><span>Software Engineering</span><br>Developing system applications</li>
+                </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>2019 Certificates</span><br>CCNA, OCA, MCP</li>
+                    <li><span>1993 Professional Institutes</span><br>Alpha Tech Ed Ctr, SW-Pearl Linux Trng Ctr, Infocan Comp Ltd, ABRS Mgmt & Tech Inst</li>
+                    <li><span>1991 College</span><br>Brigham Young University - Hawaii</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+  </div>
+</div>
+<!---------------------------------->
+<!--                              -->
+<!-- -----------Service---------- -->
+<!--                              -->
+<!---------------------------------->
+<div id="services">
+   <div class="container">
+     <h1 class="sub-title">My Services</h1>
+     <div class="services-list">
+        <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Application Design</h2>
+            <p>Experienced in both frontend and backend application designs;
+               CI/CD DevOps, containerization or traditional IT models.
+            <a href="#">learn more...</a>
+        </div>
+
+        <div>
+            <i class="fa-solid fa-network-wired"></i>
+            <h2>Network Infrastructure Engineering</h2>
+            <p>Experienced in network infrastructure design for both on-premises
+               and hybrid-cloud virtualization environments.
+            <a href="#">learn more...</a>
+        </div>
+
+        <div>
+            <i class="fa-solid fa-database"></i>
+            <h2>Database Administration</h2>
+            <p>Experienced in Oracle database schemas analysis, SP and PL/SQL design.
+            <a href="#">learn more...</a>
+        </div>
+
+     </div>
+   </div>
+</div>
+<!---------------------------------->
+<!--                              -->
+<!-- -----------portfolio-------- -->
+<!--                              -->
+<!---------------------------------->
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+        <div class="work">
+            <img src="images/IndustrialScanner.png">
+            <div class="layer">
+                <h3>Hazardous Waste Tracking System</h3>
+                <p> Designed and implemented application system to track waste delivery
+                    and handling workflow.
+                <p><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+
+        <div class="work">
+            <img src="images/Telemetry.png">
+            <div class="layer">
+                <h3>Honeywell DCS Telemetry Interface</h3>
+                <p> Designed and implemented data retrieval automation process for data analysis
+                    and compliance monitoring.
+                <p><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+
+        <div class="work">
+            <img src="images/eticket.png">
+            <div class="layer">
+                <h3>Waste Collection E-ticket Automation</h3>
+                <p> Automated trip tickets generation with online status monitoring application design
+                    to replace traditional paper tickets for waste transporation.
+                <p><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+
+        <div class="work">
+            <img src="images/Marpol.png">
+            <div class="layer">
+                <h3>On-barge Flowmeter Data Capture</h3>
+                <p> Designed and implemented data capture automation process for on-barge Rosemount flowmeter
+                    as a result of marine pollutants collection service operation.
+                <p><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+
+        <div class="work">
+            <img src="images/ChemicalWaste.png">
+            <div class="layer">
+                <h3>Chemical Waste Transportation & Effluent Discharge</h3>
+                <p> Participated in system upgrade and enhancement to improve performance
+                    efficiency of chemical waste treatment.
+                <p><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+
+        <div class="work">
+            <img src="images/ClinicalWaste.png">
+            <div class="layer">
+                <h3>Clinical Waste Incineration & Landfill</h3>
+                <p> Participated in system upgrade and enhancement to improve performance
+                    efficiency of clinical waste treatment.
+                <p><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+
+        <div class="work">
+            <img src="images/Sterilization.png">
+            <div class="layer">
+                <h3>Sterilization & Autoclave Operations</h3>
+                <p> Participated in clinical waste sterilization project involving autoclave operation tracking
+                    and operation monitoring.
+                <p><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+
+        <div class="work">
+            <img src="images/DataCenter.png">
+            <div class="layer">
+                <h3>Datacenter Administration</h3>
+                <p> Handled day-to-day maintenance, cabling and general operations of in-house
+                    datacenter.
+                <p><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+
+        <div class="work">
+            <img src="images/cabling.png">
+            <div class="layer">
+                <h3>Network Infrastructure Design</h3>
+                <p> Planned and designed network infrastructure according to the on-premises physical layout.
+                    Implemented the design with cable crimping and Wifi equipment installation.
+                <p><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+
+        <div class="work">
+            <img src="images/VPC.png">
+            <div class="layer">
+                <h3>Cloud VPC Infrastructure Design</h3>
+                <p> Planned and designed virtual private cloud network infrastructure.
+                    Implemented the AWS services and security control.
+                <p><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+
+        <div class="work">
+            <img src="images/CwssFlow.png">
+            <div class="layer">
+                <h3>System Flow Design</h3>
+                <p> Designed and implemented system flow for clinical treatment process.
+                <p><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+
+        <div class="work">
+            <img src="images/lims.png">
+            <div class="layer">
+                <h3>Lab Info Management Sys Maint</h3>
+                <p> Modified and enhanced in-house Lab Info Management Sys to fulfill
+                    the up-to-date expectations and requirements.
+                <p><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+
+    </div>
+    <a href="#" class="btn">See more</a>
+  </div>
+</div>
+<!---------------------------------->
+<!--                              -->
+<!-- ------------contact--------- -->
+<!--                              -->
+<!---------------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+
+                <div class="social-icons">
+                   <a href="tel:07447169667"><i class="fa-solid fa-square-phone"></i></a>+44 7447 169667
+                </div>
+
+                <div class="social-icons">
+                   <a href="sms:07447169667&body=Hello%20Shawn,%20I%20have%20reviewed%20your%20profile.%20My%20name%20is%20"><i class="fa-solid fa-comment-sms"></i></a>+44 7447 169667
+                </div>
+
+                <div class="social-icons">
+                   <a href="https://wa.me/85264389186"><i class="fa fa-whatsapp"></i></a>+852 6438 9186
+                </div>
+
+                <p><i class="fa-solid fa-paper-plane"></i>shawnchan99@gmail.com
+
+                <!-- <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>  -->
+            </div>
+
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                   <input type="text" name="Name" placeholder="Your Name*" required>
+                   <input type="email" name="Email" placeholder="Your Email Address*" required>
+                   <input type="phone" name="Phone No." placeholder="Your Contact Phone No.">
+                   <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                   <button type="summit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright @ Shawn. Made with <i class="fa-solid fa-heart"></i>
+           by <span>Blue Princess Studio</span>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+ <script>
+  var tablinks = document.getElementsByClassName("tab-links")
+  var tabcontents = document.getElementsByClassName("tab-contents")
+  function opentab(tabname){
+    for(tablink of tablinks){
+       tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+       tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+   }
+ </script>
+
+
+ <script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+       sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+       sidemenu.style.right = "-200px";
+    }
+ </script>
+
+
+ <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyG78RcODvfGa172RxbzhryemlzxrqeUdF1ikQWdKsHnwND7Ax_T82KnrA2r0lT775s/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully."
+            setTimeout(function(){
+               msg.innerHTML = ""
+            },2000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+ </script>
+
+
+ <script>
+    function getMobileOperatingSystem() {
+      var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+      // Windows Phone must come first because its UA also contains "Android"
+      if (/windows phone/i.test(userAgent)) {
+        document.getElementById("deviceos") = "Windows Phone.";
+      } else if (/android/i.test(userAgent)) {
+        document.getElementById("deviceos") = "Android";
+      } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        document.getElementById("deviceos") = "iOS";
+      } else {
+        document.getElementById("deviceos") = "unknown";
+      }
+    }
+ </script>
+
+
+
+<script>
+  const monthNames = "Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec".split("|");
+  const dayNames = "SUN|MON|TUE|WED|THU|FRI|SAT".split("|");
+
+  function nowInfo(now = new Date()){
+    const stdYear = now.getFullYear();
+        const rawMonth = now.getMonth();
+    const stdMonth = now.getMonth() + 1;
+    const stdDate = now.getDate();
+    const stdDayOfWeek = now.getDay();
+        const stdHours = now.getHours();
+        const stdMinutes = now.getMinutes();
+        const stdSeconds = now.getSeconds();
+        return {
+                year: stdYear,
+                month: stdMonth,
+                day: stdDate,
+                dayOfWeek: stdDayOfWeek,
+
+        hour: stdHours,
+                minute: stdMinutes,
+                second: stdSeconds,
+
+                logTime: `${stdHours.toString().padStart(2, "0")}:${stdMinutes.toString().padStart(2, "0")}:${stdSeconds.toString().padStart(2, "0")}`,
+        greeting: `${getTimeOfDay(stdHours)}`,
+
+        monthName: `${monthNames[stdMonth]}`,
+                dayName: `${dayNames[stdDayOfWeek]}`,
+        fullDate: `${monthNames[rawMonth]} ${stdDate.toString()}, ${stdYear.toString()} (${dayNames[stdDayOfWeek]})`,
+        digitalDate: `${stdYear.toString()}-${(stdMonth).toString().padStart(2, "0")}-${stdDate.toString().padStart(2, "0")}`,
+        };
+  }
+
+  function getTimeOfDay(hour) {
+      if (hour >= 5 && hour < 12) {
+        return 'morning';
+      } else if (hour >= 12 && hour < 17) {
+        return 'afternoon';
+      } else {
+        return 'evening';
+      };
+  }
+
+  const greetEl = document.querySelector("#greet");
+  const dateEl = document.querySelector("#datenow");
+  const timeEl = document.querySelector("#clocknow");
+  function tick() {
+    greetEl.textContent = nowInfo().greeting;
+        dateEl.textContent = nowInfo().fullDate;
+    timeEl.textContent = nowInfo().logTime;
+        requestAnimationFrame(tick)
+  }
+
+  tick();
+
+
+</script>
